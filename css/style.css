@@ -3,58 +3,40 @@ Colors used:
 Primary Color (Blue): #1294EF;
 Secondary Color (Black): #000000;
 */
-
 * {
   box-sizing: border-box;
 }
 
-header {
-  background-color: #e3f0ff;
-  position: relative;
-text-align: center;
-padding: 10px 0;
--webkit-box-shadow: 6px 6px 12px 0px rgba(50, 50, 50, 0.35);
--moz-box-shadow:    6px 6px 12px 0px rgba(50, 50, 50, 0.35);
-box-shadow:         6px 6px 12px 0px rgba(50, 50, 50, 0.35);
-}
-
-#hero {
-  background-color: #e3f0ff;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
-nav > ul {
+/* Text styles */
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 500;
   color: #000000;
 }
 
-nav > ul > li > a:hover, a:focus, a:active {
+nav>ul>li>a:hover, a:focus, a:active {
   color: #1294EF;
 }
 
 body {
   background-color: #ffffff;
   font-family: 'Rubik', sans-serif;
-  font-size: 18px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 18px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
 }
 
@@ -76,6 +58,7 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -86,26 +69,74 @@ li, ul, ol {
   font-weight: 300;
 }
 
-img {
-  width: 100%;
-}
-
 a {
   color: #000000;
   font-weight: 400;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
 
 a:hover,
 a:focus {
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   text-decoration: none;
 }
 
-a:active { /* selected link */
+a:active {
+  /* selected link */
   color: #1294EF;
+}
+
+
+
+
+/* Layout styling */
+header {
+  background-color: #e3f0ff;
+  position: relative;
+  text-align: center;
+  padding: 10px 0;
+  -webkit-box-shadow: 6px 6px 12px 0px rgba(50, 50, 50, 0.35);
+  -moz-box-shadow: 6px 6px 12px 0px rgba(50, 50, 50, 0.35);
+  box-shadow: 6px 6px 12px 0px rgba(50, 50, 50, 0.35);
+}
+
+
+footer {
+  background-color: #e3f0ff;
+  padding: 20px 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul>li {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+
+#hero {
+  background-color: #e3f0ff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+img {
+  width: 100%;
 }
 
 .button {
@@ -156,18 +187,18 @@ a:active { /* selected link */
   max-width: 32px;
 }
 
-/* Layout styling */
-
 .container {
   padding: 0 15px;
 }
 
 .row {
-  margin: 25px 0; /*25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /*25px top and bottom, 0 left and right */
 }
 
 #work .row {
-  padding-bottom: 25px; border-bottom: 1px solid #000000;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #000000;
 }
 
 #hero h1 {
