@@ -119,7 +119,7 @@ footer ul {
 
 footer ul>li {
   display: inline-block;
-  margin-right: 12px;
+  margin-right: 18px;
 }
 
 
@@ -169,22 +169,24 @@ img {
 .button-contact {
   display: inline-block;
   background-color: transparent;
-  color: #1294EF;
+  color: #000000;
   font-weight: 500;
   padding: 10px;
   border-radius: 3px;
-  border: 2px solid #1294EF;
+  border: 2px solid #000000;
 }
 
 .button-contact:hover {
-  background-color: #1294EF;
+  background-color: #000000;
   color: #ffffff;
 }
 
 .social-icon {
   display: inline-block;
   margin-right: 12px;
-  max-width: 32px;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
 }
 
 .container {
