@@ -11,6 +11,7 @@ Secondary Color (Black): #000000;
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav>ul>li {
@@ -146,7 +147,7 @@ img {
   font-weight: 500;
   padding: 10px;
   border-radius: 3px;
-  transition: 0.2s opacity;
+  transition: 0.5s opacity;
 }
 
 .button:hover {
@@ -174,6 +175,7 @@ img {
   padding: 10px;
   border-radius: 3px;
   border: 2px solid #000000;
+  transition: 0.5s background-color;
 }
 
 .button-contact:hover {
@@ -198,6 +200,12 @@ img {
   /*25px top and bottom, 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #000000;
@@ -206,4 +214,71 @@ img {
 #hero h1 {
   margin: 0;
   padding: 0.67em 0;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+  }
+
+  #hero {
+    text-align: center;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
