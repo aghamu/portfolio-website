@@ -131,6 +131,10 @@ footer ul>li {
   width: 100%;
 }
 
+#hero p {
+  padding-bottom: 18px;
+}
+
 nav {
   display: inline-block;
   width: 100%;
@@ -138,6 +142,10 @@ nav {
 
 img {
   width: 100%;
+}
+
+.projectImg img {
+  margin-top: 24px;
 }
 
 .button {
@@ -212,6 +220,7 @@ img {
 }
 
 #hero h1 {
+  font-size: 2em;
   margin: 0;
   padding: 0.67em 0;
 }
@@ -260,6 +269,10 @@ img {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+#hero  h1 {
+    font-size: 2.75em;
+  }
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -290,12 +303,17 @@ Medium devices (640px and larger)
     float: left;
     padding: 10px;
   }
+
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+#hero h1 {
+    font-size: 2.75em;
+  }
+
   .col-lg-7 {
     width: 58.33%;
   }
@@ -313,6 +331,11 @@ Large devices (1024px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .aboutImg {
+    float: right;
+    margin-top: 18px;
   }
 
 }
