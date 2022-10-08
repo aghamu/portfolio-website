@@ -30,15 +30,15 @@ a:active {
 body {
   background-color: #fff;
   font-family: 'Rubik', sans-serif;
+
+  /* Sets the font size to 18px */
   font-size: 18px;
 
-  /* Sets the font size to 16px */
+  /* Sets the font weight to 300 */
   font-weight: 300;
 
-  /* Sets the font weight to 300 */
-  line-height: 1.6;
-
   /* Sets the line-height to 1.6 * the font-size */
+  line-height: 1.6;
   color: #000;
 }
 
