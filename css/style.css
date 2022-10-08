@@ -8,36 +8,44 @@ Secondary Color (Black): #000000;
 }
 
 /* Text styles */
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #000000;
+  color: #000;
 }
 
-nav>ul>li>a:hover, a:focus, a:active {
-  color: #1294EF;
+nav > ul > li > a:hover,
+a:focus,
+a:active {
+  color: #1294ef;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
+
   /* Sets the font size to 16px */
   font-weight: 300;
+
   /* Sets the font weight to 300 */
   line-height: 1.6;
+
   /* Sets the line-height to 1.6 * the font-size */
-  color: #000000;
+  color: #000;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -61,21 +69,25 @@ h4 {
   font-weight: 400;
 }
 
-li, ul, ol {
+li,
+ul,
+ol {
   font-size: 1em;
   font-weight: 300;
 }
 
 a {
-  color: #000000;
+  color: #000;
   font-weight: 400;
   text-decoration: none;
+
   /* No underlining */
 }
 
 a:hover,
 a:focus {
   text-decoration: underline;
+
   /* Underlining when hovering over a link */
 }
 
@@ -86,7 +98,7 @@ a:visited {
 
 a:active {
   /* selected link */
-  color: #1294EF;
+  color: #1294ef;
 }
 
 /* Layout styling */
@@ -94,16 +106,17 @@ header {
   background-color: #e3f0ff;
   position: relative;
   padding: 10px 0;
-  -webkit-box-shadow: 6px 6px 12px 0px rgba(50, 50, 50, 0.35);
-  -moz-box-shadow: 6px 6px 12px 0px rgba(50, 50, 50, 0.35);
-  box-shadow: 6px 6px 12px 0px rgba(50, 50, 50, 0.35);
+  -webkit-box-shadow: 6px 6px 12px 0 rgba(50, 50, 50, 0.35);
+  -moz-box-shadow: 6px 6px 12px 0 rgba(50, 50, 50, 0.35);
+  box-shadow: 6px 6px 12px 0 rgba(50, 50, 50, 0.35);
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -136,7 +149,7 @@ footer ul {
   padding: 0;
 }
 
-footer ul>li {
+footer ul > li {
   display: inline-block;
   margin-right: 18px;
 }
@@ -162,8 +175,8 @@ img {
 
 .button {
   display: inline-block;
-  background-color: #1294EF;
-  color: #ffffff;
+  background-color: #1294ef;
+  color: #fff;
   font-weight: 500;
   padding: 10px;
   border-radius: 3px;
@@ -176,31 +189,31 @@ img {
 }
 
 .button:focus {
-  color: #1294EF;
+  color: #1294ef;
 }
 
 .button:visited {
-  color: #ffffff;
+  color: #fff;
 }
 
 .button:active {
-  background-color: #000000;
+  background-color: #000;
 }
 
 .button-contact {
   display: inline-block;
   background-color: transparent;
-  color: #000000;
+  color: #000;
   font-weight: 500;
   padding: 10px;
   border-radius: 3px;
-  border: 2px solid #000000;
+  border: 2px solid #000;
   transition: 0.5s background-color;
 }
 
 .button-contact:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #000;
+  color: #fff;
 }
 
 .hamburger-menu {
@@ -222,7 +235,8 @@ img {
 
 .row {
   margin: 25px 0;
-  /*25px top and bottom, 0 left and right */
+
+  /* 25px top and bottom, 0 left and right */
 }
 
 .row::after {
@@ -233,7 +247,7 @@ img {
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
 }
 
 #hero h1 {
@@ -304,8 +318,7 @@ img {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -389,4 +402,6 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+  /* empty for now */
+}
